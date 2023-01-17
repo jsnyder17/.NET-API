@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/index.css">
+    </head>
+    <body>
+        <div id="container" class="container">
+            <h1 id="header" class="header">API Test</h1>
+            <div id="button-container" class="button-container">
+                <p class="instructions">Use the buttons below to test the functionality of the API.</p>
+                <p class="label">Getters</p>
+                <hr>
+                <button id="getallpersons" class="button">Get all persons</button>
+                <button id="getallitems" class="button">Get all items</button>
+                <br>
+                <p class="label">Adders</p>
+                <hr>
+                <button id="addperson" class="button">Add person</button>
+                <button id="additem" class="button">Add item</button>
+                <br>
+                <div id="personinput" class="input" hidden>
+                    <h2 class="header">Add person</h2>
+                    <form onsubmit="return false">
+                        <label for="name">Name: </label>
+                        <input type="text" id="personname">
+                        <br>
+                        <label for="age">Age: </label>
+                        <input type="number" id="personage">
+                        <br>
+                        <input type="submit" id="personsubmit" class="button">
+                        <button id="personsubmitcancel" class="button">Cancel</button>
+                    </form>
+                    <br>
+                </div>
+                <div id="iteminput" class="input" hidden>
+                    <h2 class="header">Add item</h2>
+                    <form onsubmit="return false">
+                        <label for="name">Name: </label>
+                        <input type="text" id="itemname">
+                        <br>
+                        <label for="type">Type: </label>
+                        <select id="itemtype">
+                            <option value="Food">Food</option>
+                            <option value="Clothing">Clothing</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Toys">Toys</option>
+                            <option value="Stationary">Stationary</option>
+                        </select>
+                        <br>
+                        <label for="price">Price: </label>
+                        <input type="text" id="itemprice">
+                        <br>
+                        <label for="quantity">Quantity: </label>
+                        <input type="number" id="itemquantity">
+                        <br>
+                        <input type="submit" id="itemsubmit" class="button">
+                        <button id="itemsubmitcancel" class="button">Cancel</button>
+                    </form>
+                    <br>
+                </div>
+                <p class="label">Status</p>
+                <hr>
+                <button id="ping" class="button">Ping API</button>
+                <br>
+                <p class="label">Management</p>
+                <hr>
+                <button id="reset" class="button">Reset Database</button>
+                <br>
+                <br>
+            </div>
+            <div id="output" class="output"></div>
+        </div>
+    </body>
+    <script src="scripts/APICalls.js"></script>
+    <script src="scripts/output.js"></script>
+</html>

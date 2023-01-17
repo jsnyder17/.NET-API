@@ -1,0 +1,64 @@
+body {
+    background-image: url("/images/background.jpg");
+    background-position-x: center;
+}
+
+hr {
+    border-width: 1px;
+    border-color: rgb(206, 223, 253);
+}
+
+.header {
+    font-family: 'Frutiger', monospace;
+    color: rgb(38, 38, 201);
+    font-weight:lighter
+}
+
+.instructions {
+    font-family: 'Frutiger';
+    font-size: 17px;
+}
+
+.label {
+    font-family: 'Frutiger';
+    font-size: 15px;
+}
+
+.container {
+    width: 75%;
+    padding: 10px;
+    background-color: white;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 5px;
+    /*border-color: rgba(34, 133, 214, 0.75);*/
+    border-color: rgba(128, 153, 173, 0.5);
+}
+
+.button-container {
+    font-family: 'Frutiger';
+    font-size: 17px;
+}
+
+.button:hover {
+    border-color: lightblue;
+    border-radius: 4px;
+}
+
+.output {
+    height: 400px;
+    width: 97%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(132, 165, 228);
+    overflow: scroll;
+    padding-left: 10px;
+    background-color: white;
+    font-family: 'Frutiger';
+    font-size: 17px;
+}
+
+.input {
+    padding-left: 10px;
+}
